@@ -1,0 +1,6 @@
+# generate letsencrypt ssl certificate
+#challenge can also be dns - works in linux but have to install certbot
+# /.well-known/acme-challenge place things here for your verification as guided by cli
+# Certificate: (CRT), Private Key (KEY), Certificate Authority Bundle: (CABUNDLE) will be generated just copy it to your target host or copy paste into your shared hosting ssl (update certificate)
+ 
+certbot certonly --manual --preferred-challenges=http --email tosomdutt@gmail.com --agree-tos -d tekweiser.com,www.tekweiser.com
